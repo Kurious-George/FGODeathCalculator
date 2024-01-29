@@ -11,7 +11,7 @@ double deathCalcFunc (double hitRate, double deathRate, double instantDeathResis
 int main (){
     int n = 1;
     do {
-        double x, y, z, zz;
+        double x, y, z, zz, a, b, c, d;
         cout << "Enter hitRate: ";
         cin >> x;
         cout << "Enter deathRate: ";
@@ -20,10 +20,10 @@ int main (){
         cin >> z;
         cout << "Enter instantDeathResistDown: ";
         cin >> zz;
-        double a = x/100;
-        double b = y/100;
-        double c = z/100;
-        double d = zz/100;
+        a = x/100;
+        b = y/100;
+        c = z/100;
+        d = zz/100;
         cout << "Final Death Rate: " << deathCalcFunc(a, b, c, d) * 100 << "%" << endl;
         cout << "Enter 1 to begin a new calculation: " << endl;
         cout << "Enter 0 to exit: " << endl;
